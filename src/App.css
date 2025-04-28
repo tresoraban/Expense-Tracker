@@ -1,0 +1,131 @@
+App {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: orange; 
+  color: white;
+  padding: 10px 20px;
+  text-align: left;
+  min-height: 10vh; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(8px + 1vmin); /* Adjusted font size */
+}
+
+.App-header h1 {
+  font-size: 24px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-body {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+  flex-direction: row;
+  margin: 5px; /* Further reduced margin */
+}
+
+.App-sidebar {
+  width: 25%;
+  background-color: #f4f4f4;
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 1px solid #ddd;
+}
+
+.App-sidebar h2 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.App-sidebar form {
+  display: flex;
+  flex-direction: column;
+}
+
+.App-sidebar form input,
+.App-sidebar form select,
+.App-sidebar form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.App-sidebar form button {
+  background-color: black; 
+  color: white; 
+  border: none;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.App-sidebar form button:hover {
+  background-color: orange;
+}
+
+.App-main {
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+.search-bar {
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  border: 1px solid #ddd;
+  padding: 5px; 
+  text-align: left;
+}
+
+table th {
+  background-color: #f4f4f4;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
